@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Diabetes Prediction</title>
+  
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ 
+    <h1>Patients Diabetes Class Prediction</h1>
+      <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      
+        <input type="text" name="Pregnencies" placeholder="Number of Pregnencies" required="required" />
+        <input type="text" name="Glucose" placeholder="Plasma glucose conc'" required="required" />
+		<input type="text" name="BloodPressure" placeholder="Diastolic blood pressure" required="required" />
+		<input type="text" name="SkinThickness" placeholder="Triceps skinfold thickness" required="required" />
+		<input type="text" name="Insulin" placeholder="Two hour serum insulin" required="required" />
+		<input type="text" name="BMI" placeholder="Body Mass Index" required="required" />
+		<input type="text" name="DiabetesPedigreeFunction" placeholder="Diabetes pedigree function" required="required" />
+		<input type="text" name="Age" placeholder="Age in Years" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+  </div>
+
+
+</body>
+</html>
