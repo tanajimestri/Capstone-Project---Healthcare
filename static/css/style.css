@@ -1,0 +1,36 @@
+
+body{
+     background: url("images/hd.jpg");
+     }
+   
+
+   h1{
+      text-align: center;
+      font-size: 50px;
+      color: darkblue;
+      font-family: 'Open Sans', sans-serif;
+      
+   }
+   
+   form {  
+   margin: 20px;
+   width: 550px;
+   
+   }
+   
+   input {
+   padding: 28px;
+   font-size: inherit;
+   
+   }
+   
+   input[type="submit"] {
+    
+    width: 100px;
+    height: 20px;
+    background: steelblue;
+    color: white;
+   
+   }
+   
+    
